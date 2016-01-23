@@ -6,10 +6,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 		zoom: 2.5
 	});
 
-	var Victoria Terminus, Mumbai = [72.889095,19.039176];
-	var Grand Central, New York = [-73.976874,40.755964];
-	var St. Pancras, London = [51.53,-0.125];
-	var Yokohama, Japan = [35.465444, 139.622836]; 
+	var Mumbai = [72.889095,19.039176];
+	var NY = [-73.976874,40.755964];
+	var London = [51.53,-0.125];
+	var Japan = [35.465444, 139.622836]; 
 
 	function fly(city) {
     
