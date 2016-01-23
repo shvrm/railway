@@ -42,7 +42,7 @@ aside {
     color:#ccc;
     width:300px;
     background:#000;
-    border-right:10px #1CABD2;
+    border-right:10px solid #1CABD2;
     height:500px;
 }
 button {
