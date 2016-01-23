@@ -1,0 +1,22 @@
+.cityInput:checked + label {
+	background-color: #FFFFF !important;
+	opacity: .5;
+	color: #1CABD2 !important;
+}
+
+.cityLabel {
+	color: white;
+	font-size: 12px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+}
+
+.cityLabel:hover {
+	color: #F22EA4;
+	font-weight: bold;
+}
+
+.rounded-toggle {
+	background: none;
+
+}	
