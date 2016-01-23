@@ -23,7 +23,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 	});
 }
 
-map.addControl(new mapboxgl.Geocoder());
+
 
 map.on('click', function (e) {
 	
