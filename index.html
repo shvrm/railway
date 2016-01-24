@@ -19,11 +19,21 @@
 	
 	</style>
 <div id='map'></div>
+
+		  <div class='rounded-toggle inline pin-bottom left'>
+			  <input id='infoToggle' class='infoToggler' type='radio' name='rtoggle' value='infoToggle' checked='checked' onclick = "showhide();">
+			  <label for='infoToggle' class="toggleLabel"  ><b>i</b></label>
+			 <!--  <input id='NY' class='cityInput' type='radio' name='rtoggle' value='NY' checked='checked' onclick="fly(NY);">
+			  <label for='NY' class='cityLabel'>Grand Central, New York</label>
+			  <input id='London' class='cityInput' type='radio' name='rtoggle' value='London' checked='checked' onclick="fly(London);">
+			  <label for='London' class='cityLabel'>St. Pancras, London</label>
+			  <input id='Japan' class='cityInput' type='radio' name='rtoggle' value='Japan' checked='checked' onclick="fly(Japan);">
+			  <label for='Japan' class='cityLabel'>Yokohama, Japan</label> -->
+			 
+		     </div>
 		 
 
 </div>
-</div>
-
 <!-- <div class="round-button inline pin-bottom left"><div class="round-button-circle"><a href="http://example.com" class="round-button">Button!!</a></div></div>
 </div> -->
 
@@ -39,15 +49,15 @@
 
     
     
-		  <label for='Mumbai' class='cityLabel' onclick="fly(Mumbai);">Victoria Terminus, Mumbai</label>
+		  <label for='Mumbai' class='cityLabel' onclick="fly(Mumbai,MumbaiZoom);">Victoria Terminus, Mumbai</label>
 		  <br/>
-		  <label for='NY' class='cityLabel' onclick="fly(NY);">Grand Central, New York</label>
+		  <label for='NY' class='cityLabel' onclick="fly(NY,NYZoom);">Grand Central, New York</label>
 		  <br/>
-		  <label for='London' class='cityLabel' onclick="fly(London);">St. Pancras, London</label>
+		  <label for='London' class='cityLabel' onclick="fly(London,LondonZoom);">St. Pancras, London</label>
 		  <br/>
-		  <label for='Japan' class='cityLabel' onclick="fly(Japan);">Yokohama, Japan</label>
-		  </div>
-		  <label for='Belgium' class='cityLabel' onclick="fly(Belgium);">Bruxelles Centrale, Belgium</label>
+		  <label for='Japan' class='cityLabel' onclick="fly(Japan,JapanZoom);">Tokyo, Japan</label>
+		  <br/>
+		  <label for='Belgium' class='cityLabel' onclick="fly(Belgium,JapanZoom);">Bruxelles Centrale, Belgium</label>
 		  </div>
 
   
