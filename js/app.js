@@ -42,7 +42,7 @@ else {
 
 
 map.on('click', function (e) {
-	
+	console.log(map.getZoom());
 	map.featuresAt(e.point, {
 		radius: 10,
 		layer: ['railwaystation copy'],

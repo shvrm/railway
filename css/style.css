@@ -25,13 +25,14 @@
     color: #fff;
 }	
 
-.toggleLabel{
-    color: #1CABD2;
+.toggleLabel {
+    color: white;
+    font-size: 20px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: bold;
-    font-size: 12px;    
+    font-style: italic;
+    
 }
-
-.
 
 body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
