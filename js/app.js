@@ -23,10 +23,26 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 	});
 }
 
-map.addControl(new mapboxgl.Geocoder());
+// $('#Mumbai').click(function() {
+//   $('#sidebar').toggle('slow', function() {
+//     // Animation complete.
+//   });
+// });
+
+function showhide()
+ {
+       var div = document.getElementById("sidebar");
+if (div.style.display !== "none") {
+    div.style.display = "none";
+}
+else {
+    div.style.display = "block";
+}
+ }
+
 
 map.on('click', function (e) {
-	
+	console.log(map.getZoom());
 	map.featuresAt(e.point, {
 		radius: 10,
 		layer: ['railwaystation copy'],
@@ -46,3 +62,5 @@ map.on('click', function (e) {
 						});
 
 });
+
+
