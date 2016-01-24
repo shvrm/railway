@@ -13,12 +13,15 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 	var Japan = [139.756776,35.678041]; 
 	var Belgium = [4.379942,50.878286];
 
+
 	//set specific zoom for each city
 	var MumbaiZoom = 13.33;
 	var NYZoom = 13.06;
 	var LondonZoom = 14.5;
 	var JapanZoom = 14.56;
-	var BelgiumZoom = 11;
+    var BelgiumZoom = 11;
+
+
 
 	function fly(city,cityZoom) {
     
