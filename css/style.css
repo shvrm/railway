@@ -54,6 +54,9 @@ button {
     vertical-align:top;
     background:#1CABD2;
 }
+.vertical{
+    transform: rotate(270deg);
+}
 .left {
     float:left;
 }
