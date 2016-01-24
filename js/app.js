@@ -23,6 +23,22 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 	});
 }
 
+// $('#Mumbai').click(function() {
+//   $('#sidebar').toggle('slow', function() {
+//     // Animation complete.
+//   });
+// });
+
+function showhide()
+ {
+       var div = document.getElementById("sidebar");
+if (div.style.display !== "none") {
+    div.style.display = "none";
+}
+else {
+    div.style.display = "block";
+}
+ }
 
 
 map.on('click', function (e) {
@@ -46,3 +62,5 @@ map.on('click', function (e) {
 						});
 
 });
+
+
