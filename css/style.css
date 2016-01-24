@@ -50,6 +50,7 @@ aside {
 button {
     height:100%;
     vertical-align:top;
+    background:#1CABD2;
 }
 .left {
     float:left;
