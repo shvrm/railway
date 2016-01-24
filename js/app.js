@@ -6,7 +6,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 		zoom: 2.5
 	});
 
-	var Mumbai = [72.889095,19.039176];
+	var Mumbai = [-287.172439];
 	var NY = [-73.976874,40.755964];
 	var London = [-0.125,51.53];
 	var Japan = [139.622836,35.465444]; 
