@@ -12,7 +12,7 @@
 }
 
 .cityLabel:hover {
-	color: #F22EA4;
+	color: #1CABD2;
 	font-weight: bold;
 }
 
@@ -20,3 +20,43 @@
 	background: none;
 
 }	
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+   
+#sidebar {
+    position:absolute;
+    left:-270px;
+    /*we hide it to the left while being absolute*/
+    cursor:pointer;
+    background: none transparent;
+
+    /*this code makes a smooth transition */
+    transition:all 0.8s ease-in-out;
+    -moz-transition:all 0.8s ease-in-out;
+    -o-transition:all 0.8s ease-in-out;
+    -webkit-transition:all 0.8s ease-in-out;
+}
+#sidebar:hover {
+    left:0;
+    /*on mouse over, bring back its position*/
+}
+
+aside {
+    font:15px Arial;
+    color:#ccc;
+    width:300px;
+    background:#000;
+    /*border-right:10px solid #1CABD2;*/
+    height:500px;
+}
+button {
+    height:100%;
+    vertical-align:top;
+    background:#1CABD2;
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}

@@ -4,51 +4,65 @@
     <meta charset='utf-8' />
     <title>Train</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v0.1.0/mapbox-gl-geocoder.css' type='text/css' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v0.1.0/mapbox-gl-geocoder.css' type='text/css' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.js'></script>
-	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v0.1.0/mapbox-gl-geocoder.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v0.1.0/mapbox-gl-geocoder.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.css' rel='stylesheet' />
-	<link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
-	<link href='css/style.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+    <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
+
+   
 </head>
 <body>
 	
 	</style>
 <div id='map'></div>
 
-	  <div class='rounded-toggle inline pin-bottom center'>
-		  <input id='Bengaluru' class='cityInput' type='radio' name='rtoggle' value='Bengaluru' checked='checked' onclick="fly(Bengaluru);">
-		  <label for='Bengaluru' class='cityLabel'>Bengaluru</label>
-		  <input id='Paris' class='cityInput' type='radio' name='rtoggle' value='Paris' checked='checked' onclick="fly(Paris);">
-		  <label for='Paris' class='cityLabel'>Paris</label>
-		  <input id='London' class='cityInput' type='radio' name='rtoggle' value='London' checked='checked' onclick="fly(London);">
-		  <label for='London' class='cityLabel'>London</label>
-		  <input id='NewYork' class='cityInput' type='radio' name='rtoggle' value='NewYork' checked='checked' onclick="fly(NewYork);">
-		  <label for='NewYork' class='cityLabel'>New York</label>
-		 
-	     </div>
+		<!--   <div class='rounded-toggle inline pin-bottom center'>
+			  <input id='Mumbai' class='cityInput' type='radio' name='rtoggle' value='Mumbai' checked='checked' onclick="fly(Mumbai);">
+			  <label for='Mumbai' class='cityLabel'>Victoria Terminus, Mumbai</label>
+			  <input id='NY' class='cityInput' type='radio' name='rtoggle' value='NY' checked='checked' onclick="fly(NY);">
+			  <label for='NY' class='cityLabel'>Grand Central, New York</label>
+			  <input id='London' class='cityInput' type='radio' name='rtoggle' value='London' checked='checked' onclick="fly(London);">
+			  <label for='London' class='cityLabel'>St. Pancras, London</label>
+			  <input id='Japan' class='cityInput' type='radio' name='rtoggle' value='Japan' checked='checked' onclick="fly(Japan);">
+			  <label for='Japan' class='cityLabel'>Yokohama, Japan</label>
+			 
+		     </div> -->
 		 
 
 </div>
 </div>
- <div id='info' class='box round fill-gray pad1 col3 pin-right opacity .8' style="bottom:inherit">
-   
-    <h3>WHEELS ON TRACKS</h3>
-    <p>Add content </p>
+
+ <aside id="sidebar" class="right">
+ <button class="right button">>></button>
+ <div class="info opacity 1">
+<h1>Railway Tracks & Stations Around the World</h1>
+<p>The map show worldwide coverage of railway stations, and tracks from OpenStreetMap. See if the stations you commute to/from is on OpenStreetMap, and who contributed this information.</p>
      <div class="pad1y">
-         <a href="https://www.mapbox.com/jobs/engineering/">We're hiring! </a>
-         Check for updates on our <a href="https://www.facebook.com/Mapboxblr/?fref=ts">Facebook page</a> and  our<a href="https://twitter.com/mapbox">Twitter</a> handle.
+         <a href="https://www.mapbox.com/jobs/map-analyst-blr/">We're hiring! </a>
+         Check for updates on our <a href="https://www.facebook.com/Mapboxblr/?fref=ts">Facebook page</a> and our <a href="https://twitter.com/mapbox">Twitter</a> handle.
      </div>
+
     
- </div>
+    
+		  <label for='Mumbai' class='cityLabel' onclick="fly(Mumbai);">Victoria Terminus, Mumbai</label>
+		  <br/>
+		  <label for='NY' class='cityLabel' onclick="fly(NY);">Grand Central, New York</label>
+		  <br/>
+		  <label for='London' class='cityLabel' onclick="fly(London);">St. Pancras, London</label>
+		  <br/>
+		  <label for='Japan' class='cityLabel' onclick="fly(Japan);">Yokohama, Japan</label>
+		  </div>
+
+  
+
+</aside>
 <br/>
 
 <script src="js/app.js">
+
 
 </script>
 
