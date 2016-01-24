@@ -28,6 +28,8 @@ body { margin:0; padding:0; }
     left:-270px;
     /*we hide it to the left while being absolute*/
     cursor:pointer;
+    background: none transparent;
+
     /*this code makes a smooth transition */
     transition:all 0.8s ease-in-out;
     -moz-transition:all 0.8s ease-in-out;
