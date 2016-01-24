@@ -37,7 +37,8 @@ body { margin:0; padding:0; }
     -webkit-transition:all 0.8s ease-in-out;
 }
 #sidebar:hover {
-    left:0;
+    left:1%;
+
     /*on mouse over, bring back its position*/
 }
 
