@@ -8,16 +8,18 @@
 }
 
 .cityLabel {
-	color: white;
-	font-size: 12px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #1CABD2;
+	font-size: 15px;
+	font-family: "Arial";
 	font-weight: bold;
+
     
 }
 
 .cityLabel:hover {
-	color: #1CABD2;
-	font-weight: bold;
+	/*color: #1CABD2;
+	font-weight: bold;*/
+    background:rgba(128,128,128,0.5); 
 }
 
 .rounded-toggle{
@@ -64,7 +66,7 @@ aside {
     width:300px;
     background:#000;
     /*border-right:10px solid #1CABD2;*/
-    height:500px;
+    height:325px;
 }
 button {
     height:100%;

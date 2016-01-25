@@ -3,19 +3,31 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 		container: 'map',
 		style: 'mapbox://styles/ramas/cijqw7bi20068bpm3h601g5op',
 		center: [35.96, 11.70],
-		zoom: 2.5
+		zoom: 2.5,
+		attributionControl:false
 	});
 
-	var Mumbai = [72.889095,19.039176];
-	var NY = [-73.976874,40.755964];
-	var London = [-0.125,51.53];
-	var Japan = [139.622836,35.465444]; 
+	var Mumbai = [72.853903,18.970074];
+	var NY = [-73.969,40.736];
+	var London = [-0.125698,51.534093];
+	var Japan = [139.756776,35.678041]; 
+	var Belgium = [4.379942,50.878286];
 
-	function fly(city) {
+
+	//set specific zoom for each city
+	var MumbaiZoom = 13.33;
+	var NYZoom = 13.06;
+	var LondonZoom = 14.5;
+	var JapanZoom = 14.56;
+    var BelgiumZoom = 11;
+
+
+
+	function fly(city,cityZoom) {
     
     	map.flyTo({
         	center: city,
-			zoom: 13.1,
+			zoom: cityZoom,
 			speed:0.3,
 			curve:2,
 			pitch:50,
@@ -23,21 +35,17 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 	});
 }
 
-// $('#Mumbai').click(function() {
-//   $('#sidebar').toggle('slow', function() {
-//     // Animation complete.
-//   });
-// });
+
 
 function showhide()
  {
-       var div = document.getElementById("sidebar");
-if (div.style.display !== "none") {
-    div.style.display = "none";
-}
-else {
-    div.style.display = "block";
-}
+      var div = document.getElementById("sidebar");
+	  if (div.style.display !== "none") {
+		  div.style.display = "none";
+		}
+	  else {
+		    div.style.display = "block";
+		}
  }
 
 
