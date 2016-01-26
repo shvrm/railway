@@ -60,7 +60,8 @@ map.on('click', function (e) {
 
 				if (features.length > 0) {
 
-					var popupHTML = '<h5>' + features[0].properties.name + '</h5><p>'+ '</p>'+  "OSM contributor: "+ '<a href="http://www.openstreetmap.org/user/' + features[0].properties._user +'">' +features[0].properties._user+"</a>" ;
+					var popupHTML = '<h5>' + '<a href="http://www.openstreetmap.org/edit?editor=id&node=' + features[0].properties._osm_node_id +'">'+ features[0].properties.name+"</a>"+'</h5>'+ 
+					                "Last edited by: "+ '<a href="http://www.openstreetmap.org/user/' + features[0].properties._user +'">' +features[0].properties._user+"</a>";
 
 					var popup = new mapboxgl.Popup()
 								.setLngLat(features[0].geometry.coordinates)
