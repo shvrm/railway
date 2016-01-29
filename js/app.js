@@ -4,6 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmFtYXMiLCJhIjoiUFdJckNoOCJ9.LGJOlhJCLddj5fk5
 		style: 'mapbox://styles/ramas/cijqw7bi20068bpm3h601g5op',
 		center: [35.96, 11.70],
 		zoom: 2.5,
+		hash: true,
 		attributionControl:false
 	});
 
