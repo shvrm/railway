@@ -44,13 +44,11 @@ body {
 
 #sidebar {
     position: absolute;
-    /*left:-270px;*/
     right: 1%;
     bottom: 4%;
-    /*we hide it to the left while being absolute*/
+    /*we hide it to the right while being absolute*/
     cursor: pointer;
     background: none transparent;
-    /*background-color: rgba(0,0,0,0.5)*/
     transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
